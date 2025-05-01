@@ -1,62 +1,1139 @@
+/* General body styles (optional, can add defaults here) */
 body {
     margin: 0;
-    font-family: 'Helvetica', sans-serif;
-    background-color: white;
-  }
-  
-  .container {
-    display: flex;
-    padding: 40px;
-  }
-  
-  .left-panel {
-    width: 60%;
-    padding-right: 40px;
-  }
-  
-  .left-panel h1 {
-    color: #c75e7e;
+    font-family: sans-serif; /* Example default */
+}
+
+/* Styles extracted from inline attributes */
+.container {
+    width: 1728px;
+    height: 12752px; /* Note: Extremely large height */
+    position: relative;
+    background: white;
+    overflow: hidden; /* Consider if this is necessary, might hide content */
+}
+
+.element-1 {
+    width: 1429px;
+    height: 810px;
+    left: 199px;
+    top: 7650px;
+    position: absolute;
+    background: #D9D9D9;
+}
+
+.element-2 {
+    width: 187px;
+    height: 43px;
+    left: 1318px;
+    top: 9951px;
+    position: absolute;
+    transform: rotate(180deg);
+    transform-origin: top left;
+    border: 2px #797979 solid;
+}
+
+.element-3 {
+    width: 188px;
+    height: 68.83px;
+    left: 1287px;
+    top: 8931px;
+    position: absolute;
+    border: 2px #797979 solid;
+}
+
+.element-4 {
+    width: 451.51px;
+    height: 125.40px;
+    left: 731.51px;
+    top: 10010.40px;
+    position: absolute;
+    transform: rotate(180deg);
+    transform-origin: top left;
+    border: 2px #797979 solid;
+}
+
+.element-5 {
+    width: 1264px;
+    height: 442px;
+    left: 249px;
+    top: 6825px;
+    position: absolute;
+    outline: 4px black solid;
+    outline-offset: -2px;
+}
+
+.image-1 {
+    width: 978px;
+    height: 1304px;
+    left: 947px;
+    top: -194px;
+    position: absolute;
+}
+
+.sidebar {
+    width: 114px;
+    height: 12752px; /* Matches container height */
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: #839C43;
+}
+
+.portfolio-text {
+    left: -1px;
+    top: 796.16px;
+    position: absolute;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    color: #ACC46F;
+    font-size: 96px;
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.title-about {
+    width: 493px;
+    height: 167px;
+    left: 154px;
+    top: 1302px;
+    position: absolute;
+    color: #E06792;
+    font-size: 150px;
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.title-skills {
+    width: 493px;
+    height: 167px;
+    left: 165px;
+    top: 2664px;
+    position: absolute;
+    color: #E06792;
+    font-size: 150px;
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.text-about {
+    width: 850px;
+    left: 165px;
+    top: 1526px;
+    position: absolute;
+    color: black;
+    font-size: 36px;
+    font-family: 'Be Vietnam Pro';
+    font-weight: 300;
+    word-wrap: break-word;
+}
+
+.project-box-1 {
+    width: 377px;
+    height: 379px;
+    left: 170px;
+    top: 4217px;
+    position: absolute;
+    background: #D9D9D9;
+}
+
+.project-box-2 {
+    width: 377px;
+    height: 379px;
+    left: 736px;
+    top: 4217px;
+    position: absolute;
+    background: #D9D9D9;
+}
+
+.project-box-3 {
+    width: 377px;
+    height: 379px;
+    left: 1302px;
+    top: 4217px;
+    position: absolute;
+    background: #D9D9D9;
+}
+
+.project-box-4 {
+    width: 377px;
+    height: 379px;
+    left: 170px;
+    top: 4817px;
+    position: absolute;
+    background: #D9D9D9;
+}
+
+.project-box-5 {
+    width: 377px;
+    height: 379px;
+    left: 736px;
+    top: 4817px;
+    position: absolute;
+    background: #D9D9D9;
+}
+
+.project-box-6 {
+    width: 377px;
+    height: 379px;
+    left: 1302px;
+    top: 4817px;
+    position: absolute;
+    background: #D9D9D9;
+}
+
+.image-about {
+    width: 568.50px;
+    height: 758px;
+    left: 1159px;
+    top: 1367px;
+    position: absolute;
+}
+
+.project-label-1 {
+    left: 277px;
+    top: 4612px;
+    position: absolute;
+    color: #E06792;
     font-size: 40px;
-    margin-bottom: 20px;
-  }
-  
-  .left-panel p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-  }
-  
-  .qr-section {
-    display: flex;
-    gap: 40px;
-    margin-top: 40px;
-  }
-  
-  .qr {
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.project-title-1 {
+    width: 430px;
+    height: 128px;
+    left: 162px;
+    top: 5469px;
+    position: absolute;
+    color: #E06792;
+    font-size: 100px;
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.project-label-4 {
+    left: 294px;
+    top: 5217px;
+    position: absolute;
+    color: #E06792;
+    font-size: 40px;
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.project-label-2 {
+    left: 862px;
+    top: 4612px;
+    position: absolute;
+    color: #E06792;
+    font-size: 40px;
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.project-label-5 {
+    left: 862px;
+    top: 5217px;
+    position: absolute;
+    color: #E06792;
+    font-size: 40px;
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.project-label-3 {
+    left: 1430px;
+    top: 4612px;
+    position: absolute;
+    color: #E06792;
+    font-size: 40px;
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.project-label-6 {
+    left: 1430px;
+    top: 5217px;
+    position: absolute;
+    color: #E06792;
+    font-size: 40px;
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.project-desc-1 {
+    width: 399px;
+    left: 170px;
+    top: 4664px;
+    position: absolute;
     text-align: center;
-  }
-  
-  .qr-box {
-    width: 120px;
-    height: 120px;
-    background-color: #e0e0e0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #777;
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-  
-  .right-panel {
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .right-panel img {
-    max-width: 100%;
-    height: auto;
-  }
-  
+    color: #9C9C9C;
+    font-size: 20px;
+    font-family: 'Be Vietnam Pro';
+    font-style: italic;
+    font-weight: 200;
+    word-wrap: break-word;
+}
+
+.project-desc-4 {
+    width: 399px;
+    left: 140px;
+    top: 5274px;
+    position: absolute;
+    text-align: center;
+    color: #9C9C9C;
+    font-size: 20px;
+    font-family: 'Be Vietnam Pro';
+    font-style: italic;
+    font-weight: 200;
+    word-wrap: break-word;
+}
+
+.project-desc-2 {
+    width: 399px;
+    left: 724px;
+    top: 4664px;
+    position: absolute;
+    text-align: center;
+    color: #9C9C9C;
+    font-size: 20px;
+    font-family: 'Be Vietnam Pro';
+    font-style: italic;
+    font-weight: 200;
+    word-wrap: break-word;
+}
+
+.project-desc-5 {
+    width: 399px;
+    left: 727px;
+    top: 5274px;
+    position: absolute;
+    text-align: center;
+    color: #9C9C9C;
+    font-size: 20px;
+    font-family: 'Be Vietnam Pro';
+    font-style: italic;
+    font-weight: 200;
+    word-wrap: break-word;
+}
+
+.project-desc-3 {
+    width: 399px;
+    left: 1303px;
+    top: 4664px;
+    position: absolute;
+    text-align: center;
+    color: #9C9C9C;
+    font-size: 20px;
+    font-family: 'Be Vietnam Pro';
+    font-style: italic;
+    font-weight: 200;
+    word-wrap: break-word;
+}
+
+.project-desc-6 {
+    width: 399px;
+    left: 1303px;
+    top: 5274px;
+    position: absolute;
+    text-align: center;
+    color: #9C9C9C;
+    font-size: 20px;
+    font-family: 'Be Vietnam Pro';
+    font-style: italic;
+    font-weight: 200;
+    word-wrap: break-word;
+}
+
+.project-detail-box-1 {
+    width: 680px;
+    height: 698px;
+    left: 180px;
+    top: 5657px;
+    position: absolute;
+    background: #D9D9D9;
+}
+
+.project-detail-text-1 {
+    width: 722px;
+    height: 144px;
+    left: 912px;
+    top: 6136px;
+    position: absolute;
+    color: #9C9C9C;
+    font-size: 26px;
+    font-family: 'Be Vietnam Pro';
+    font-style: italic;
+    font-weight: 200;
+    word-wrap: break-word;
+}
+
+.project-detail-text-2 {
+    width: 722px;
+    height: 144px;
+    left: 894px;
+    top: 5810px;
+    position: absolute;
+    color: #9C9C9C;
+    font-size: 26px;
+    font-family: 'Be Vietnam Pro';
+    font-style: italic;
+    font-weight: 200;
+    word-wrap: break-word;
+}
+
+.project-detail-title-1 {
+    left: 894px;
+    top: 5714px;
+    position: absolute;
+    color: black;
+    font-size: 80px;
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.project-detail-title-2 {
+    left: 912px;
+    top: 6040px;
+    position: absolute;
+    color: black;
+    font-size: 80px;
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.design-process-title {
+    left: 625px;
+    top: 6524px;
+    position: absolute;
+    color: black;
+    font-size: 80px;
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.brainstorming-title {
+    left: 667px;
+    top: 7518px;
+    position: absolute;
+    color: black;
+    font-size: 80px;
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.solution-title {
+    left: 730px;
+    top: 8633px;
+    position: absolute;
+    color: black;
+    font-size: 80px;
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.conclusion-title {
+    left: 752px;
+    top: 10693px;
+    position: absolute;
+    color: black;
+    font-size: 80px;
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.design-circle-1 {
+    width: 202px;
+    height: 202px;
+    left: 162px;
+    top: 6705px;
+    position: absolute;
+    background: #D9D9D9;
+    border-radius: 9999px;
+}
+
+.design-circle-2 {
+    width: 202px;
+    height: 202px;
+    left: 400px;
+    top: 6945px;
+    position: absolute;
+    background: #D9D9D9;
+    border-radius: 9999px;
+}
+
+.design-circle-3 {
+    width: 202px;
+    height: 202px;
+    left: 759px;
+    top: 7147px;
+    position: absolute;
+    background: #D9D9D9;
+    border-radius: 9999px;
+}
+
+.design-circle-4 {
+    width: 202px;
+    height: 202px;
+    left: 1134px;
+    top: 6945px;
+    position: absolute;
+    background: #D9D9D9;
+    border-radius: 9999px;
+}
+
+.design-circle-5 {
+    width: 202px;
+    height: 202px;
+    left: 1412px;
+    top: 6705px;
+    position: absolute;
+    background: #D9D9D9;
+    border-radius: 9999px;
+}
+
+.brainstorm-box-1 {
+    width: 311px;
+    height: 384px;
+    left: 218px;
+    top: 7675px;
+    position: absolute;
+    background: #707070;
+}
+
+.brainstorm-box-2 {
+    width: 338px;
+    height: 252px;
+    left: 563px;
+    top: 7663px;
+    position: absolute;
+    background: #939393;
+}
+
+.brainstorm-box-3 {
+    width: 180px;
+    height: 174px;
+    left: 563px;
+    top: 8267px;
+    position: absolute;
+    background: #707070;
+}
+
+.brainstorm-box-4 {
+    width: 297px;
+    height: 174px;
+    left: 755px;
+    top: 8267px;
+    position: absolute;
+    background: #525252;
+}
+
+.brainstorm-box-5 {
+    width: 66px;
+    height: 174px;
+    left: 1063px;
+    top: 8267px;
+    position: absolute;
+    background: #707070;
+}
+
+.brainstorm-box-6 {
+    width: 101.21px;
+    height: 173.93px;
+    left: 1328.64px;
+    top: 8333.37px;
+    position: absolute;
+    transform: rotate(90deg);
+    transform-origin: top left;
+    background: #A4A4A4;
+}
+
+.brainstorm-box-7 {
+    width: 45.38px;
+    height: 65.02px;
+    left: 1207.05px;
+    top: 8277.20px;
+    position: absolute;
+    transform: rotate(90deg);
+    transform-origin: top left;
+    background: #707070;
+}
+
+.brainstorm-box-8 {
+    width: 45.38px;
+    height: 65.02px;
+    left: 1283.14px;
+    top: 8277.20px;
+    position: absolute;
+    transform: rotate(90deg);
+    transform-origin: top left;
+    background: #707070;
+}
+
+.brainstorm-box-9 {
+    width: 45.38px;
+    height: 20.76px;
+    left: 1313.17px;
+    top: 8277.34px;
+    position: absolute;
+    transform: rotate(90deg);
+    transform-origin: top left;
+    background: #707070;
+}
+
+.brainstorm-box-10 {
+    width: 291px;
+    height: 252px;
+    left: 951px;
+    top: 7663px;
+    position: absolute;
+    background: #E8E8E8;
+}
+
+.brainstorm-box-11 {
+    width: 263px;
+    height: 262px;
+    left: 1339px;
+    top: 8173px;
+    position: absolute;
+    background: #929292;
+}
+
+.brainstorm-box-12 {
+    width: 350px;
+    height: 482px;
+    left: 1264px;
+    top: 7663px;
+    position: absolute;
+    background: #2A2A2A;
+}
+
+.brainstorm-box-13 {
+    width: 311px;
+    height: 365px;
+    left: 218px;
+    top: 8070px;
+    position: absolute;
+    background: #525252;
+}
+
+.brainstorm-box-14 {
+    width: 337.90px;
+    height: 701.41px;
+    left: 1244.04px;
+    top: 7928.44px;
+    position: absolute;
+    transform: rotate(91deg);
+    transform-origin: top left;
+    background: #3D3C3C;
+}
+
+.brainstorm-box-15 {
+    width: 88px;
+    height: 115px;
+    left: 1247px;
+    top: 8156px;
+    position: absolute;
+    background: white;
+}
+
+.solution-box-1 {
+    width: 405px;
+    height: 696px;
+    left: 112px;
+    top: 8799px;
+    position: absolute;
+    background: #D9D9D9;
+}
+
+.solution-box-2 {
+    width: 383px;
+    height: 684px;
+    left: 496px;
+    top: 9566px;
+    position: absolute;
+    background: #D9D9D9;
+}
+
+.solution-box-3 {
+    width: 557px;
+    height: 550px;
+    left: 154px;
+    top: 10589px;
+    position: absolute;
+    background: #D9D9D9;
+}
+
+.solution-box-4 {
+    width: 395px;
+    height: 680px;
+    left: 962px;
+    top: 8931px;
+    position: absolute;
+    background: #D9D9D9;
+}
+
+.solution-box-5 {
+    width: 385px;
+    height: 662px;
+    left: 1266px;
+    top: 9734px;
+    position: absolute;
+    background: #D9D9D9;
+}
+
+.solution-text-1 {
+    width: 281px;
+    left: 617px;
+    top: 9035px;
+    position: absolute;
+    color: #797979;
+    font-size: 20px;
+    font-family: 'Figma Hand'; /* Ensure this font is available/linked */
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.solution-text-2 {
+    width: 401px;
+    left: 66px;
+    top: 9713px;
+    position: absolute;
+    color: #797979;
+    font-size: 20px;
+    font-family: 'Figma Hand'; /* Ensure this font is available/linked */
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.solution-text-3 {
+    width: 281px;
+    left: 1395px;
+    top: 8778px;
+    position: absolute;
+    color: #797979;
+    font-size: 20px;
+    font-family: 'Figma Hand'; /* Ensure this font is available/linked */
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.solution-border-1 {
+    width: 187px;
+    height: 43px;
+    left: 517px;
+    top: 9119px;
+    position: absolute;
+    border: 2px #797979 solid;
+}
+
+.solution-text-4 {
+    width: 231px;
+    left: 1013px;
+    top: 9797px;
+    position: absolute;
+    color: #797979;
+    font-size: 20px;
+    font-family: 'Figma Hand'; /* Ensure this font is available/linked */
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.conclusion-text {
+    width: 866px;
+    height: 262px;
+    left: 752px;
+    top: 10805px;
+    position: absolute;
+    text-align: center;
+    color: black;
+    font-size: 26px;
+    font-family: 'Be Vietnam Pro';
+    font-style: italic;
+    font-weight: 200;
+    word-wrap: break-word;
+}
+
+.hidden-text-1 { /* These seem oddly positioned off-screen */
+    width: 399px;
+    left: -608px;
+    top: 6745px;
+    position: absolute;
+    color: #9C9C9C;
+    font-size: 20px;
+    font-family: 'Be Vietnam Pro';
+    font-style: italic;
+    font-weight: 200;
+    word-wrap: break-word;
+}
+
+.hidden-text-2 { /* These seem oddly positioned off-screen */
+    width: 399px;
+    left: -598px;
+    top: 11381px;
+    position: absolute;
+    color: #9C9C9C;
+    font-size: 20px;
+    font-family: 'Be Vietnam Pro';
+    font-style: italic;
+    font-weight: 200;
+    word-wrap: break-word;
+}
+
+.contact-email {
+    width: 595px;
+    height: 68px;
+    left: 1081px;
+    top: 12070px;
+    position: absolute;
+    color: black;
+    font-size: 50px;
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.contact-phone {
+    width: 601px;
+    height: 68px;
+    left: 1081px;
+    top: 12174px;
+    position: absolute;
+    color: black;
+    font-size: 50px;
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.contact-behance {
+    width: 595px;
+    height: 68px;
+    left: 1081px;
+    top: 12278px;
+    position: absolute;
+    color: black;
+    font-size: 50px;
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.contact-linkedin {
+    width: 567px;
+    height: 68px;
+    left: 1081px;
+    top: 12382px;
+    position: absolute;
+    color: black;
+    font-size: 50px;
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.name-kriti {
+    width: 689px;
+    height: 289px;
+    left: 309px;
+    top: 380px;
+    position: absolute;
+    color: #E06792;
+    font-size: 400px;
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.intro-iam {
+    left: 309px;
+    top: 320px;
+    position: absolute;
+    color: black;
+    font-size: 60px;
+    font-family: 'Be Vietnam Pro';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.intro-role {
+    left: 609px;
+    top: 795px;
+    position: absolute;
+}
+
+.role-part-1 {
+    color: black;
+    font-size: 50px;
+    font-family: 'Be Vietnam Pro';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.role-part-2 {
+    color: #858E4D;
+    font-size: 50px;
+    font-family: 'Be Vietnam Pro';
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+.role-part-3 {
+    color: black;
+    font-size: 50px;
+    font-family: 'Be Vietnam Pro';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.header-bar {
+    width: 1728px;
+    height: 113px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: #839C43;
+    border-bottom-right-radius: 35.60px;
+    border-bottom-left-radius: 35.60px;
+}
+
+.logo-container {
+    width: 68.81px;
+    left: 45px;
+    top: 23px;
+    position: absolute;
+    background: #839C43; /* This might be redundant if header-bar is behind it */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    display: inline-flex; /* Changed from inline styles */
+}
+
+.logo-box-1 {
+    width: 64.80px;
+    height: 63.28px;
+    background: white;
+    outline: 1.56px black solid;
+    outline-offset: -0.78px;
+}
+
+.logo-box-2 {
+    width: 64.80px;
+    height: 63.28px;
+    background: #E06792;
+    outline: 1.56px black solid;
+    outline-offset: -0.78px;
+}
+
+.logo-text {
+    width: 38.08px; /* Removed inline style */
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    line-height: 40px;
+    word-wrap: break-word;
+    /* Position adjustments might be needed if flex layout differs slightly */
+    /* Consider adding position: relative; top: -XXpx; if needed */
+}
+
+.nav-container {
+    width: 675.48px;
+    left: 926px;
+    top: 35px;
+    position: absolute;
+    background: #839C43; /* This might be redundant */
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 48px;
+    display: inline-flex; /* Changed from inline styles */
+}
+
+.nav-item { /* Replaces multiple divs with same style */
+    color: white;
+    font-size: 36px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+.nav-home {
+    left: 804px;
+    top: 33px;
+    position: absolute;
+    color: white;
+    font-size: 36px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+.skills-box-1 {
+    width: 433px;
+    height: 433px;
+    left: 184px;
+    top: 2888px;
+    position: absolute;
+    background: #D9D9D9;
+}
+
+.skills-box-2 {
+    width: 433px;
+    height: 433px;
+    left: 704px;
+    top: 2888px;
+    position: absolute;
+    background: #D9D9D9;
+}
+
+.skills-box-3 {
+    width: 433px;
+    height: 433px;
+    left: 441px;
+    top: 3396px;
+    position: absolute;
+    background: #D9D9D9;
+}
+
+.skills-box-4 {
+    width: 433px;
+    height: 433px;
+    left: 967px;
+    top: 3396px;
+    position: absolute;
+    background: #D9D9D9;
+}
+
+.skills-box-5 {
+    width: 433px;
+    height: 433px;
+    left: 1226px;
+    top: 2888px;
+    position: absolute;
+    background: #D9D9D9;
+}
+
+.qr-box-1 {
+    width: 219px;
+    height: 186px;
+    left: 280px;
+    top: 2196px;
+    position: absolute;
+    background: #D9D9D9;
+}
+
+.qr-box-2 {
+    width: 219px;
+    height: 186px;
+    left: 592px;
+    top: 2196px;
+    position: absolute;
+    background: #D9D9D9;
+}
+
+.qr-text-1 {
+    width: 198px;
+    height: 29px;
+    left: 301px;
+    top: 2274px;
+    position: absolute;
+    color: #949494;
+    font-size: 20px;
+    font-family: 'Be Vietnam Pro';
+    font-style: italic;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.qr-text-2 {
+    width: 198px;
+    height: 29px;
+    left: 613px;
+    top: 2274px;
+    position: absolute;
+    color: #949494;
+    font-size: 20px;
+    font-family: 'Be Vietnam Pro';
+    font-style: italic;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.qr-link-behance {
+    left: 644px;
+    top: 2414px;
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    font-family: 'Be Vietnam Pro';
+    font-style: italic;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.qr-link-cv {
+    width: 29px;
+    height: 24px;
+    left: 375px;
+    top: 2419px;
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    font-family: 'Be Vietnam Pro';
+    font-style: italic;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.image-contact {
+    width: 863px;
+    height: 1150px;
+    left: 113px;
+    top: 11708px;
+    position: absolute;
+}
+
+.contact-prompt {
+    width: 568px;
+    height: 83px;
+    left: 1081px;
+    top: 11716px;
+    position: absolute;
+    color: black;
+    font-size: 58px;
+    font-family: 'Be Vietnam Pro';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.contact-cta {
+    width: 229px;
+    height: 58px;
+    left: 1208px;
+    top: 11820px;
+    position: absolute;
+    color: black;
+    font-size: 40px;
+    font-family: 'Be Vietnam Pro';
+    font-weight: 300;
+    word-wrap: break-word;
+}
