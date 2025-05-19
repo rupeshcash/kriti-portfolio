@@ -105,7 +105,7 @@ body {
     font-size: clamp(2.5rem, 5vw, 3.5rem);
     font-weight: 500;
     color: #000000;
-    margin-bottom: -0.3em;
+    margin-bottom: 1.0em;
     margin-left: 0;
 }
 .hero-name {
@@ -152,6 +152,12 @@ body {
     .hero-image-container {
         max-width: 80%;
         margin: 0 auto;
+    }
+    .hero-iam {
+        margin-bottom: 0.7em;
+    }
+    .hero-name {
+        margin-top: 0.1em;
     }
 }
 
@@ -412,10 +418,10 @@ body {
     margin-left: 50%;
     transform: translateX(-50%);
     background: #fff;
-    padding-top: 90px;
-    padding-bottom: 90px;
-    margin-top: 70px;
-    margin-bottom: 70px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-top: 24px;
+    margin-bottom: 24px;
     box-sizing: border-box;
 }
 .illustrations-title {
@@ -424,7 +430,7 @@ body {
     font-weight: 700;
     font-family: 'Bebas Neue', sans-serif;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 24px;
     margin-top: 0;
     letter-spacing: 0.02em;
 }
@@ -432,13 +438,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 48px;
+    gap: 16px;
     width: 100%;
 }
 .illustrations-row {
     display: flex;
     justify-content: center;
-    gap: 60px;
+    gap: 32px;
     width: 100%;
 }
 .illustration-img {
