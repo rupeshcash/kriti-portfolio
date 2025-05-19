@@ -1,1158 +1,1347 @@
-/* General body styles (optional, can add defaults here) */
-body {
+/* --- Global Resets and Base Styles --- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
     margin: 0;
-    font-family: sans-serif; /* Example default */
+    padding: 0;
 }
 
-/* Styles extracted from inline attributes */
-.container {
-    width: 1728px;
-    height: 12752px; /* Note: Extremely large height */
-    position: relative;
-    background: white;
-    overflow: hidden; /* Consider if this is necessary, might hide content */
+html {
+    scroll-behavior: smooth;
 }
 
-.element-1 {
-    width: 1429px;
-    height: 810px;
-    left: 199px;
-    top: 7650px;
-    position: absolute;
-    background: #D9D9D9;
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: #FFFFFF; /* White background */
+    color: #333333; /* Dark grey for text */
+    line-height: 1.7;
+    display: flex; /* For sidebar layout */
 }
 
-.element-2 {
-    width: 187px;
-    height: 43px;
-    left: 1318px;
-    top: 9951px;
-    position: absolute;
-    transform: rotate(180deg);
-    transform-origin: top left;
-    border: 2px #797979 solid;
+/* Major titles and pink headings */
+.skills-title,
+.skills-subtitle,
+.projects-title,
+.project-card-title,
+.project1-title,
+.project1-subtitle,
+.project1-overview-title,
+.insights-title {
+    font-family: 'Bebas Neue', sans-serif;
 }
 
-.element-3 {
-    width: 188px;
-    height: 68.83px;
-    left: 1287px;
-    top: 8931px;
-    position: absolute;
-    border: 2px #797979 solid;
+/* Remove Bebas Neue from smaller text, let them inherit from body */
+.skills-icons .icon-item span,
+.languages-list li,
+.project-card-desc,
+.project1-problem-text,
+.project1-overview-text,
+.insight-card {
+    font-family: inherit;
 }
 
-.element-4 {
-    width: 451.51px;
-    height: 125.40px;
-    left: 731.51px;
-    top: 10010.40px;
-    position: absolute;
-    transform: rotate(180deg);
-    transform-origin: top left;
-    border: 2px #797979 solid;
-}
-
-.element-5 {
-    width: 1264px;
-    height: 442px;
-    left: 249px;
-    top: 6825px;
-    position: absolute;
-    outline: 4px black solid;
-    outline-offset: -2px;
-}
-
-.image-1 {
-    width: 978px;
-    height: 1304px;
-    left: 947px;
-    top: -194px;
-    position: absolute;
-}
-
+/* --- Sidebar --- */
 .sidebar {
-    width: 114px;
-    height: 12752px; /* Matches container height */
-    left: 0px;
-    top: 0px;
-    position: absolute;
-    background: #839C43;
-}
-
-.portfolio-text {
-    left: -1px;
-    top: 796.16px;
-    position: absolute;
-    transform: rotate(-90deg);
-    transform-origin: top left;
-    color: #ACC46F;
-    font-size: 96px;
-    font-family: 'Bebas Neue';
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-.title-about {
-    width: 493px;
-    height: 167px;
-    left: 154px;
-    top: 1302px;
-    position: absolute;
-    color: #E06792;
-    font-size: 150px;
-    font-family: 'Bebas Neue';
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-
-
-.title-tools {
-    color: #E06792;
-
-font-family: "Bebas Neue";
-font-size: 88px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-
-.title-coding{
-    color: #E06792;
-
-font-family: "Bebas Neue";
-font-size: 88px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-
-.title-languages{
-    color: #E06792;
-
-font-family: "Bebas Neue";
-font-size: 88px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-
-.text-about {
-    width: 850px;
-    left: 165px;
-    top: 1526px;
-    position: absolute;
-    color: black;
-    font-size: 36px;
-    font-family: 'Be Vietnam Pro';
-    font-weight: 300;
-    word-wrap: break-word;
-}
-
-.project-box-1 {
-    width: 377px;
-    height: 379px;
-    left: 170px;
-    top: 4217px;
-    position: absolute;
-    background: #D9D9D9;
-}
-
-.project-box-2 {
-    width: 377px;
-    height: 379px;
-    left: 736px;
-    top: 4217px;
-    position: absolute;
-    background: #D9D9D9;
-}
-
-.project-box-3 {
-    width: 377px;
-    height: 379px;
-    left: 1302px;
-    top: 4217px;
-    position: absolute;
-    background: #D9D9D9;
-}
-
-.project-box-4 {
-    width: 377px;
-    height: 379px;
-    left: 170px;
-    top: 4817px;
-    position: absolute;
-    background: #D9D9D9;
-}
-
-.project-box-5 {
-    width: 377px;
-    height: 379px;
-    left: 736px;
-    top: 4817px;
-    position: absolute;
-    background: #D9D9D9;
-}
-
-.project-box-6 {
-    width: 377px;
-    height: 379px;
-    left: 1302px;
-    top: 4817px;
-    position: absolute;
-    background: #D9D9D9;
-}
-
-.image-about {
-    width: 568.50px;
-    height: 758px;
-    left: 1159px;
-    top: 1367px;
-    position: absolute;
-}
-
-.project-label-1 {
-    left: 277px;
-    top: 4612px;
-    position: absolute;
-    color: #E06792;
-    font-size: 40px;
-    font-family: 'Bebas Neue';
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-.project-title-1 {
-    width: 430px;
-    height: 128px;
-    left: 162px;
-    top: 5469px;
-    position: absolute;
-    color: #E06792;
-    font-size: 100px;
-    font-family: 'Bebas Neue';
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-.project-label-4 {
-    left: 294px;
-    top: 5217px;
-    position: absolute;
-    color: #E06792;
-    font-size: 40px;
-    font-family: 'Bebas Neue';
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-.project-label-2 {
-    left: 862px;
-    top: 4612px;
-    position: absolute;
-    color: #E06792;
-    font-size: 40px;
-    font-family: 'Bebas Neue';
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-.project-label-5 {
-    left: 862px;
-    top: 5217px;
-    position: absolute;
-    color: #E06792;
-    font-size: 40px;
-    font-family: 'Bebas Neue';
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-.project-label-3 {
-    left: 1430px;
-    top: 4612px;
-    position: absolute;
-    color: #E06792;
-    font-size: 40px;
-    font-family: 'Bebas Neue';
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-.project-label-6 {
-    left: 1430px;
-    top: 5217px;
-    position: absolute;
-    color: #E06792;
-    font-size: 40px;
-    font-family: 'Bebas Neue';
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-.project-desc-1 {
-    width: 399px;
-    left: 170px;
-    top: 4664px;
-    position: absolute;
-    text-align: center;
-    color: #9C9C9C;
-    font-size: 20px;
-    font-family: 'Be Vietnam Pro';
-    font-style: italic;
-    font-weight: 200;
-    word-wrap: break-word;
-}
-
-.project-desc-4 {
-    width: 399px;
-    left: 140px;
-    top: 5274px;
-    position: absolute;
-    text-align: center;
-    color: #9C9C9C;
-    font-size: 20px;
-    font-family: 'Be Vietnam Pro';
-    font-style: italic;
-    font-weight: 200;
-    word-wrap: break-word;
-}
-
-.project-desc-2 {
-    width: 399px;
-    left: 724px;
-    top: 4664px;
-    position: absolute;
-    text-align: center;
-    color: #9C9C9C;
-    font-size: 20px;
-    font-family: 'Be Vietnam Pro';
-    font-style: italic;
-    font-weight: 200;
-    word-wrap: break-word;
-}
-
-.project-desc-5 {
-    width: 399px;
-    left: 727px;
-    top: 5274px;
-    position: absolute;
-    text-align: center;
-    color: #9C9C9C;
-    font-size: 20px;
-    font-family: 'Be Vietnam Pro';
-    font-style: italic;
-    font-weight: 200;
-    word-wrap: break-word;
-}
-
-.project-desc-3 {
-    width: 399px;
-    left: 1303px;
-    top: 4664px;
-    position: absolute;
-    text-align: center;
-    color: #9C9C9C;
-    font-size: 20px;
-    font-family: 'Be Vietnam Pro';
-    font-style: italic;
-    font-weight: 200;
-    word-wrap: break-word;
-}
-
-.project-desc-6 {
-    width: 399px;
-    left: 1303px;
-    top: 5274px;
-    position: absolute;
-    text-align: center;
-    color: #9C9C9C;
-    font-size: 20px;
-    font-family: 'Be Vietnam Pro';
-    font-style: italic;
-    font-weight: 200;
-    word-wrap: break-word;
-}
-
-.project-detail-box-1 {
-    width: 680px;
-    height: 698px;
-    left: 180px;
-    top: 5657px;
-    position: absolute;
-    background: #D9D9D9;
-}
-
-.project-detail-text-1 {
-    width: 722px;
-    height: 144px;
-    left: 912px;
-    top: 6136px;
-    position: absolute;
-    color: #9C9C9C;
-    font-size: 26px;
-    font-family: 'Be Vietnam Pro';
-    font-style: italic;
-    font-weight: 200;
-    word-wrap: break-word;
-}
-
-.project-detail-text-2 {
-    width: 722px;
-    height: 144px;
-    left: 894px;
-    top: 5810px;
-    position: absolute;
-    color: #9C9C9C;
-    font-size: 26px;
-    font-family: 'Be Vietnam Pro';
-    font-style: italic;
-    font-weight: 200;
-    word-wrap: break-word;
-}
-
-.project-detail-title-1 {
-    left: 894px;
-    top: 5714px;
-    position: absolute;
-    color: black;
-    font-size: 80px;
-    font-family: 'Bebas Neue';
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-.project-detail-title-2 {
-    left: 912px;
-    top: 6040px;
-    position: absolute;
-    color: black;
-    font-size: 80px;
-    font-family: 'Bebas Neue';
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-.design-process-title {
-    left: 625px;
-    top: 6524px;
-    position: absolute;
-    color: black;
-    font-size: 80px;
-    font-family: 'Bebas Neue';
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-.brainstorming-title {
-    left: 667px;
-    top: 7518px;
-    position: absolute;
-    color: black;
-    font-size: 80px;
-    font-family: 'Bebas Neue';
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-.solution-title {
-    left: 730px;
-    top: 8633px;
-    position: absolute;
-    color: black;
-    font-size: 80px;
-    font-family: 'Bebas Neue';
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-.conclusion-title {
-    left: 752px;
-    top: 10693px;
-    position: absolute;
-    color: black;
-    font-size: 80px;
-    font-family: 'Bebas Neue';
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-.design-circle-1 {
-    width: 202px;
-    height: 202px;
-    left: 162px;
-    top: 6705px;
-    position: absolute;
-    background: #D9D9D9;
-    border-radius: 9999px;
-}
-
-.design-circle-2 {
-    width: 202px;
-    height: 202px;
-    left: 400px;
-    top: 6945px;
-    position: absolute;
-    background: #D9D9D9;
-    border-radius: 9999px;
-}
-
-.design-circle-3 {
-    width: 202px;
-    height: 202px;
-    left: 759px;
-    top: 7147px;
-    position: absolute;
-    background: #D9D9D9;
-    border-radius: 9999px;
-}
-
-.design-circle-4 {
-    width: 202px;
-    height: 202px;
-    left: 1134px;
-    top: 6945px;
-    position: absolute;
-    background: #D9D9D9;
-    border-radius: 9999px;
-}
-
-.design-circle-5 {
-    width: 202px;
-    height: 202px;
-    left: 1412px;
-    top: 6705px;
-    position: absolute;
-    background: #D9D9D9;
-    border-radius: 9999px;
-}
-
-.brainstorm-box-1 {
-    width: 311px;
-    height: 384px;
-    left: 218px;
-    top: 7675px;
-    position: absolute;
-    background: #707070;
-}
-
-.brainstorm-box-2 {
-    width: 338px;
-    height: 252px;
-    left: 563px;
-    top: 7663px;
-    position: absolute;
-    background: #939393;
-}
-
-.brainstorm-box-3 {
-    width: 180px;
-    height: 174px;
-    left: 563px;
-    top: 8267px;
-    position: absolute;
-    background: #707070;
-}
-
-.brainstorm-box-4 {
-    width: 297px;
-    height: 174px;
-    left: 755px;
-    top: 8267px;
-    position: absolute;
-    background: #525252;
-}
-
-.brainstorm-box-5 {
-    width: 66px;
-    height: 174px;
-    left: 1063px;
-    top: 8267px;
-    position: absolute;
-    background: #707070;
-}
-
-.brainstorm-box-6 {
-    width: 101.21px;
-    height: 173.93px;
-    left: 1328.64px;
-    top: 8333.37px;
-    position: absolute;
-    transform: rotate(90deg);
-    transform-origin: top left;
-    background: #A4A4A4;
-}
-
-.brainstorm-box-7 {
-    width: 45.38px;
-    height: 65.02px;
-    left: 1207.05px;
-    top: 8277.20px;
-    position: absolute;
-    transform: rotate(90deg);
-    transform-origin: top left;
-    background: #707070;
-}
-
-.brainstorm-box-8 {
-    width: 45.38px;
-    height: 65.02px;
-    left: 1283.14px;
-    top: 8277.20px;
-    position: absolute;
-    transform: rotate(90deg);
-    transform-origin: top left;
-    background: #707070;
-}
-
-.brainstorm-box-9 {
-    width: 45.38px;
-    height: 20.76px;
-    left: 1313.17px;
-    top: 8277.34px;
-    position: absolute;
-    transform: rotate(90deg);
-    transform-origin: top left;
-    background: #707070;
-}
-
-.brainstorm-box-10 {
-    width: 291px;
-    height: 252px;
-    left: 951px;
-    top: 7663px;
-    position: absolute;
-    background: #E8E8E8;
-}
-
-.brainstorm-box-11 {
-    width: 263px;
-    height: 262px;
-    left: 1339px;
-    top: 8173px;
-    position: absolute;
-    background: #929292;
-}
-
-.brainstorm-box-12 {
-    width: 350px;
-    height: 482px;
-    left: 1264px;
-    top: 7663px;
-    position: absolute;
-    background: #2A2A2A;
-}
-
-.brainstorm-box-13 {
-    width: 311px;
-    height: 365px;
-    left: 218px;
-    top: 8070px;
-    position: absolute;
-    background: #525252;
-}
-
-.brainstorm-box-14 {
-    width: 337.90px;
-    height: 701.41px;
-    left: 1244.04px;
-    top: 7928.44px;
-    position: absolute;
-    transform: rotate(91deg);
-    transform-origin: top left;
-    background: #3D3C3C;
-}
-
-.brainstorm-box-15 {
-    width: 88px;
-    height: 115px;
-    left: 1247px;
-    top: 8156px;
-    position: absolute;
-    background: white;
-}
-
-.solution-box-1 {
-    width: 405px;
-    height: 696px;
-    left: 112px;
-    top: 8799px;
-    position: absolute;
-    background: #D9D9D9;
-}
-
-.solution-box-2 {
-    width: 383px;
-    height: 684px;
-    left: 496px;
-    top: 9566px;
-    position: absolute;
-    background: #D9D9D9;
-}
-
-.solution-box-3 {
-    width: 557px;
-    height: 550px;
-    left: 154px;
-    top: 10589px;
-    position: absolute;
-    background: #D9D9D9;
-}
-
-.solution-box-4 {
-    width: 395px;
-    height: 680px;
-    left: 962px;
-    top: 8931px;
-    position: absolute;
-    background: #D9D9D9;
-}
-
-.solution-box-5 {
-    width: 385px;
-    height: 662px;
-    left: 1266px;
-    top: 9734px;
-    position: absolute;
-    background: #D9D9D9;
-}
-
-.solution-text-1 {
-    width: 281px;
-    left: 617px;
-    top: 9035px;
-    position: absolute;
-    color: #797979;
-    font-size: 20px;
-    font-family: 'Figma Hand'; /* Ensure this font is available/linked */
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-.solution-text-2 {
-    width: 401px;
-    left: 66px;
-    top: 9713px;
-    position: absolute;
-    color: #797979;
-    font-size: 20px;
-    font-family: 'Figma Hand'; /* Ensure this font is available/linked */
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-.solution-text-3 {
-    width: 281px;
-    left: 1395px;
-    top: 8778px;
-    position: absolute;
-    color: #797979;
-    font-size: 20px;
-    font-family: 'Figma Hand'; /* Ensure this font is available/linked */
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-.solution-border-1 {
-    width: 187px;
-    height: 43px;
-    left: 517px;
-    top: 9119px;
-    position: absolute;
-    border: 2px #797979 solid;
-}
-
-.solution-text-4 {
-    width: 231px;
-    left: 1013px;
-    top: 9797px;
-    position: absolute;
-    color: #797979;
-    font-size: 20px;
-    font-family: 'Figma Hand'; /* Ensure this font is available/linked */
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-.conclusion-text {
-    width: 866px;
-    height: 262px;
-    left: 752px;
-    top: 10805px;
-    position: absolute;
-    text-align: center;
-    color: black;
-    font-size: 26px;
-    font-family: 'Be Vietnam Pro';
-    font-style: italic;
-    font-weight: 200;
-    word-wrap: break-word;
-}
-
-.hidden-text-1 { /* These seem oddly positioned off-screen */
-    width: 399px;
-    left: -608px;
-    top: 6745px;
-    position: absolute;
-    color: #9C9C9C;
-    font-size: 20px;
-    font-family: 'Be Vietnam Pro';
-    font-style: italic;
-    font-weight: 200;
-    word-wrap: break-word;
-}
-
-.hidden-text-2 { /* These seem oddly positioned off-screen */
-    width: 399px;
-    left: -598px;
-    top: 11381px;
-    position: absolute;
-    color: #9C9C9C;
-    font-size: 20px;
-    font-family: 'Be Vietnam Pro';
-    font-style: italic;
-    font-weight: 200;
-    word-wrap: break-word;
-}
-
-.contact-email {
-    width: 595px;
-    height: 68px;
-    left: 1081px;
-    top: 12070px;
-    position: absolute;
-    color: black;
-    font-size: 50px;
-    font-family: 'Bebas Neue';
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-.contact-phone {
-    width: 601px;
-    height: 68px;
-    left: 1081px;
-    top: 12174px;
-    position: absolute;
-    color: black;
-    font-size: 50px;
-    font-family: 'Bebas Neue';
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-.contact-behance {
-    width: 595px;
-    height: 68px;
-    left: 1081px;
-    top: 12278px;
-    position: absolute;
-    color: black;
-    font-size: 50px;
-    font-family: 'Bebas Neue';
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-.contact-linkedin {
-    width: 567px;
-    height: 68px;
-    left: 1081px;
-    top: 12382px;
-    position: absolute;
-    color: black;
-    font-size: 50px;
-    font-family: 'Bebas Neue';
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-.name-kriti {
-    width: 689px;
-    height: 289px;
-    left: 309px;
-    top: 330px;
-    position: absolute;
-    color: #E06792;
-    font-size: 400px;
-    font-family: 'Bebas Neue';
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-.intro-iam {
-    left: 309px;
-    top: 320px;
-    position: absolute;
-    color: black;
-    font-size: 60px;
-    font-family: 'Be Vietnam Pro';
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-.intro-role {
-    left: 609px;
-    top: 795px;
-    position: absolute;
-}
-
-.role-part-1 {
-    color: black;
-    font-size: 50px;
-    font-family: 'Be Vietnam Pro';
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-.role-part-2 {
-    color: #858E4D;
-    font-size: 50px;
-    font-family: 'Be Vietnam Pro';
-    font-weight: 600;
-    word-wrap: break-word;
-}
-
-.role-part-3 {
-    color: black;
-    font-size: 50px;
-    font-family: 'Be Vietnam Pro';
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-.header-bar {
-    width: 1728px;
-    height: 113px;
-    left: 0px;
-    top: 0px;
-    position: absolute;
-    background: #839C43;
-    border-bottom-right-radius: 35.60px;
-    border-bottom-left-radius: 35.60px;
-}
-
-.logo-container {
-    width: 68.81px;
-    left: 45px;
-    top: 23px;
-    position: absolute;
-    background: #839C43; /* This might be redundant if header-bar is behind it */
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 8px;
-    display: inline-flex; /* Changed from inline styles */
-}
-
-.logo-box-1 {
-    width: 64.80px;
-    height: 63.28px;
-    background: white;
-    outline: 1.56px black solid;
-    outline-offset: -0.78px;
-}
-
-.logo-box-2 {
-    width: 64.80px;
-    height: 63.28px;
-    background: #E06792;
-    outline: 1.56px black solid;
-    outline-offset: -0.78px;
-}
-
-.logo-text {
-    width: 38.08px; /* Removed inline style */
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    font-family: 'Montserrat';
-    font-weight: 800;
-    line-height: 40px;
-    word-wrap: break-word;
-    /* Position adjustments might be needed if flex layout differs slightly */
-    /* Consider adding position: relative; top: -XXpx; if needed */
-}
-
-.nav-container {
-    width: 675.48px;
-    left: 926px;
-    top: 35px;
-    position: absolute;
-    background: #839C43; /* This might be redundant */
-    justify-content: flex-end;
-    align-items: flex-start;
-    gap: 48px;
-    display: inline-flex; /* Changed from inline styles */
-}
-
-.nav-item { /* Replaces multiple divs with same style */
-    color: white;
-    font-size: 36px;
-    font-family: 'Montserrat';
-    font-weight: 600;
-    word-wrap: break-word;
-}
-
-.nav-home {
-    left: 804px;
-    top: 33px;
-    position: absolute;
-    color: white;
-    font-size: 36px;
-    font-family: 'Montserrat';
-    font-weight: 600;
-    word-wrap: break-word;
-}
-
-
-
-.qr-box-1 {
-    width: 219px;
-    height: 186px;
-    left: 280px;
-    top: 2196px;
-    position: absolute;
-    background: #D9D9D9;
-}
-
-.qr-box-2 {
-    width: 219px;
-    height: 186px;
-    left: 592px;
-    top: 2196px;
-    position: absolute;
-    background: #D9D9D9;
-}
-
-.qr-text-1 {
-    width: 198px;
-    height: 29px;
-    left: 301px;
-    top: 2274px;
-    position: absolute;
-    color: #949494;
-    font-size: 20px;
-    font-family: 'Be Vietnam Pro';
-    font-style: italic;
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-.qr-text-2 {
-    width: 198px;
-    height: 29px;
-    left: 613px;
-    top: 2274px;
-    position: absolute;
-    color: #949494;
-    font-size: 20px;
-    font-family: 'Be Vietnam Pro';
-    font-style: italic;
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-.qr-link-behance {
-    left: 644px;
-    top: 2414px;
-    position: absolute;
-    color: black;
-    font-size: 20px;
-    font-family: 'Be Vietnam Pro';
-    font-style: italic;
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-.qr-link-cv {
-    width: 29px;
-    height: 24px;
-    left: 375px;
-    top: 2419px;
-    position: absolute;
-    color: black;
-    font-size: 20px;
-    font-family: 'Be Vietnam Pro';
-    font-style: italic;
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-.image-contact {
-    width: 863px;
-    height: 1150px;
-    left: 113px;
-    top: 11708px;
-    position: absolute;
-}
-
-.contact-prompt {
-    width: 568px;
-    height: 83px;
-    left: 1081px;
-    top: 11716px;
-    position: absolute;
-    color: black;
-    font-size: 58px;
-    font-family: 'Be Vietnam Pro';
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-.contact-cta {
-    width: 229px;
-    height: 58px;
-    left: 1208px;
-    top: 11820px;
-    position: absolute;
-    color: black;
-    font-size: 40px;
-    font-family: 'Be Vietnam Pro';
-    font-weight: 300;
-    word-wrap: break-word;
-}
-
-/* New Skills Section Styles */
-.skills-section {
-    margin-top: 50px; /* Adjust spacing as needed */
-    padding: 20px;
-    text-align: center; /* Center the title */
-}
-
-.skills-section-title {
-    color: #E06792; /* Keeping similar color */
-    font-size: 80px; /* Adjust size */
-    font-family: 'Bebas Neue';
-    font-weight: 400;
-    margin-bottom: 40px; /* Space below the title */
-}
-
-.skills-boxes-container {
+    width: 90px; /* As per visual inspection of PDF/image */
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #A8B8A0; /* Greenish color from image_3a1b0e.jpg */
     display: flex;
-    justify-content: center; /* Center the boxes horizontally */
-    gap: 40px; /* Space between boxes */
-    flex-wrap: wrap; /* Allow boxes to wrap on smaller screens */
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
 }
 
-.skill-box {
-    width: 300px; /* Example width, adjust as needed */
-    height: 300px; /* Example height, adjust as needed */
-    border: 2px solid #797979; /* Example border */
-    background-color: #D9D9D9; /* Example background */
+.sidebar-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg); /* To read top-to-bottom */
+    font-size: 28px; /* Adjusted for visibility & design */
+    font-weight: 500;
+    color: #FFFFFF; /* White text on sidebar */
+    letter-spacing: 1.5px;
+    text-transform: uppercase; /* Looks uppercase in PDF */
+}
+
+/* --- Main Content Area --- */
+.main-content {
+    margin-left: 90px; /* Match sidebar width */
+    width: calc(100% - 90px);
+    overflow-y: auto; /* Allow scrolling for content */
+}
+
+/* --- Hero Section (Full Viewport) --- */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+    position: relative;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    flex-direction: row;
+}
+.hero-text-content {
+    text-align: center;
+    max-width: 60%;
+    z-index: 1;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero-hello {
+    font-size: clamp(3.5rem, 7vw, 5rem);
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: -0.1em;
+}
+.hero-iam {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: -0.3em;
+    margin-left: 0;
+}
+.hero-name {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: clamp(10rem, 22vw, 20rem);
+    font-weight: 700;
+    color: #D95A8A;
+    line-height: 0.9;
+    margin-bottom: 18px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+.hero-role {
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-top: 0.2em;
+}
+.hero-image-container {
+    max-width: 45%;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-image-container img {
+    max-width: 100%;
+    max-height: 90vh;
+    min-width: 320px;
+    min-height: 320px;
+    object-fit: contain;
+}
+@media (max-width: 900px) {
+    .hero-section {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+    }
+    .hero-text-content {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .hero-image-container {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* --- General Content Sections --- */
+.content-section {
+    padding: 80px 6%; /* Consistent padding for sections */
+    border-bottom: 1px solid #EAEAEA; /* Subtle separator */
+}
+.content-section:last-of-type {
+    border-bottom: none;
+}
+
+.content-section h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #D95A8A; /* Pink accent */
+    display: inline-block; /* To make border only as wide as text */
+}
+
+.content-section h3 {
+    font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+    color: #D95A8A; /* Pink accent */
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+.content-section h3:first-child {
+    margin-top: 0;
+}
+
+.content-section h4 {
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    color: #555555;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.content-section p {
+    font-size: clamp(1rem, 1.8vw, 1.1rem);
+    margin-bottom: 15px;
+    color: #4F4F4F;
+}
+
+/* --- About Me Section --- */
+.about-me-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.about-image-container {
+    flex: 0 0 380px;
+    max-width: 420px;
+}
+.about-image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+.about-text-container {
+    flex: 1;
+}
+.about-text-container h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #F48CA0;
+    margin-bottom: 28px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.about-text-container ul {
+    list-style: none;
+    padding-left: 0;
+}
+.about-text-container li {
+    font-size: 1.35rem;
+    font-weight: 500;
+    margin-bottom: 18px;
+    padding-left: 30px;
+    position: relative;
+}
+@media (max-width: 900px) {
+    .about-me-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .about-image-container {
+        max-width: 320px;
+        width: 80vw;
+    }
+    .about-text-container h2 {
+        font-size: 2rem;
+    }
+    .about-text-container li {
+        font-size: 1.1rem;
+    }
+}
+
+/* --- Skills Section --- */
+.skills-section {
+    background: #fff;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.skills-title {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #B6C98E; /* Pastel green */
+    letter-spacing: 0.08em;
+    margin-bottom: 40px;
+}
+.skills-flex {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 7vw;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.skills-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 220px;
+}
+.skills-subtitle {
+    color: #F48CA0; /* Pink */
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.skills-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 22px 18px;
+    margin-bottom: 0;
+}
+.tools-icons {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.coding-icons {
+    grid-template-columns: 1fr 1fr;
+}
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.icon-item img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    margin-bottom: 2px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.07));
+}
+.icon-item span {
+    font-size: 1rem;
+    color: #222;
+    font-weight: 500;
+    margin-top: 2px;
+}
+.languages-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.languages-list li {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #111;
+    letter-spacing: 0.04em;
+}
+
+/* Remove old skills grid/category styles for this section */
+.skills-grid, .skill-category { display: none !important; }
+
+@media (max-width: 900px) {
+    .skills-flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .skills-col {
+        min-width: 0;
+        width: 100%;
+    }
+    .skills-icons.tools-icons, .skills-icons.coding-icons {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .skills-title {
+        font-size: 2.2rem;
+    }
+    .skills-subtitle {
+        font-size: 1.2rem;
+    }
+    .skills-icons.tools-icons, .skills-icons.coding-icons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .icon-item img {
+        width: 36px;
+        height: 36px;
+    }
+    .languages-list li {
+        font-size: 1rem;
+    }
+}
+
+/* --- Projects Section --- */
+.project-item {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #fff; /* Ensure white background for project item if main has color */
+    border: 1px solid #EDEDED;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.07);
+}
+.project-item:last-child {
+    margin-bottom: 0;
+}
+
+.project-image {
+    flex: 0 0 35%; /* Image takes up 35% of width */
+    max-width: 300px; /* Max width for project images */
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Ensure whole image is visible */
+    border-radius: 4px;
+}
+
+.project-description {
+    flex: 1; /* Takes remaining space */
+}
+
+/* --- Illustrations Section (Refined Production Design) --- */
+.illustrations-section {
+    width: 100vw;
+    max-width: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    box-sizing: border-box;
+}
+.illustrations-title {
+    color: #F48CA0;
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 0;
+    letter-spacing: 0.02em;
+}
+.illustrations-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    width: 100%;
+}
+.illustrations-row {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    width: 100%;
+}
+.illustration-img {
+    width: 320px;
+    max-width: 30vw;
+    min-width: 220px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    background: #fff;
+    margin: 0 10px;
+    object-fit: contain;
+}
+.illustrations-row:last-child {
+    justify-content: center;
+}
+@media (max-width: 1100px) {
+    .illustration-img {
+        width: 220px;
+        max-width: 45vw;
+    }
+    .illustrations-row {
+        gap: 24px;
+    }
+}
+@media (max-width: 700px) {
+    .illustrations-row {
+        flex-direction: column;
+        gap: 18px;
+        align-items: center;
+    }
+    .illustration-img {
+        width: 90vw;
+        max-width: 98vw;
+        min-width: 0;
+    }
+}
+
+/* --- About Me Section (Production Design) --- */
+.aboutme-section {
+    margin-top: 90px;
+    margin-bottom: 40px;
+}
+.aboutme-title {
+    color: #F48CA0;
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: left;
+    margin-bottom: 40px;
+    letter-spacing: 0.02em;
+}
+.aboutme-flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+}
+.aboutme-text {
+    flex: 2;
+    font-size: 1.08rem;
+    color: #222;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    line-height: 1.7;
+}
+.aboutme-illustration {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.aboutme-illustration img {
+    width: 260px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.aboutme-see { color: #8BC34A; font-weight: 600; }
+.aboutme-hear { color: #64B5F6; font-weight: 600; }
+.aboutme-smell { color: #FFD54F; font-weight: 600; }
+.aboutme-feel { color: #4DD0E1; font-weight: 600; }
+.aboutme-taste { color: #E57373; font-weight: 600; }
+.aboutme-true { color: #B6C98E; font-weight: 600; }
+@media (max-width: 900px) {
+    .aboutme-flex {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+    .aboutme-illustration {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .aboutme-illustration img {
+        width: 180px;
+    }
+}
+@media (max-width: 600px) {
+    .aboutme-title, .illustrations-title {
+        font-size: 1.3rem;
+        margin-bottom: 28px;
+    }
+    .aboutme-text {
+        font-size: 0.98rem;
+    }
+}
+
+/* --- Footer --- */
+footer.content-section {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 1px solid #EAEAEA;
+}
+
+footer p {
+    font-size: 0.95rem;
+    color: #777777;
+}
+
+/* --- Responsive Adjustments (Example) --- */
+@media (max-width: 1200px) {
+    .hero-name {
+        font-size: clamp(6rem, 15vw, 14rem);
+    }
+    .hero-image-container {
+        max-width: 40%;
+    }
+}
+
+@media (max-width: 992px) {
+    .sidebar {
+        width: 70px;
+    }
+    .main-content {
+        margin-left: 70px;
+        width: calc(100% - 70px);
+    }
+    .hero-section {
+        flex-direction: column; /* Stack text and image on smaller screens */
+        text-align: center; /* Center hero text when stacked */
+        padding-top: 80px; /* Add padding when sidebar is smaller or hidden */
+        height: auto; /* Allow height to adjust to content */
+        min-height: 100vh; /* Still aim for full height feel */
+    }
+    .hero-text-content {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .hero-iam {
+        margin-left: 0;
+    }
+    .hero-image-container {
+        max-width: 60%; /* Allow image to be larger when stacked */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-me-section {
+        flex-direction: column;
+        align-items: center; /* Center items when stacked */
+    }
+    .about-image-container {
+        margin-bottom: 30px;
+        flex-basis: auto; /* Reset flex-basis */
+        width: 60%; /* Adjust width */
+        max-width: 280px;
+    }
+    .project-item {
+        flex-direction: column;
+    }
+    .project-image {
+        max-width: 100%; /* Allow image to span more width */
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+     .sidebar {
+        /* Consider hiding sidebar or making it toggleable for very small screens */
+        display: none; /* Example: Hide sidebar */
+    }
+    .main-content {
+        margin-left: 0; /* Full width if sidebar is hidden */
+        width: 100%;
+    }
+    .hero-section {
+        padding: 60px 5%;
+    }
+    .hero-name {
+        font-size: clamp(4rem, 18vw, 10rem);
+    }
+    .hero-hello, .hero-iam, .hero-role {
+        font-size: smaller; /* Adjust other hero text accordingly */
+    }
+     .content-section {
+        padding: 60px 5%;
+    }
+    .content-section h2 {
+        font-size: clamp(1.8rem, 5vw, 2.5rem);
+    }
+}
+
+/* --- Enhanced Projects Section (Production Design) --- */
+.projects-section {
+    background: #fff;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.projects-title {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #B6C98E; /* Pastel green */
+    letter-spacing: 0.08em;
+    margin-bottom: 50px;
+}
+.projects-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3vw;
+    max-width: 1100px;
+    margin: 0 auto 30px auto;
+}
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0 10px;
+}
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+}
+.project-card-title {
+    color: #F48CA0; /* Pink */
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+.project-card-desc {
+    color: #888;
+    font-size: 0.98rem;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 1.5;
+}
+@media (max-width: 1100px) {
+    .projects-row {
+        gap: 18px;
+    }
+    .project-card {
+        width: 28vw;
+        min-width: 200px;
+        max-width: 320px;
+    }
+}
+@media (max-width: 900px) {
+    .projects-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .project-card {
+        width: 90vw;
+        max-width: 400px;
+    }
+}
+@media (max-width: 600px) {
+    .projects-title {
+        font-size: 2.2rem;
+    }
+    .project-card-title {
+        font-size: 1rem;
+    }
+    .project-card img {
+        height: 140px;
+    }
+    .project-card {
+        width: 98vw;
+        max-width: 98vw;
+        padding: 0 2vw;
+    }
+}
+
+/* --- Project 1 Section (Production Design) --- */
+.project1-section {
+    background: #fff;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.project1-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #F48CA0;
+    margin-bottom: 40px;
+    text-align: left;
+    margin-left: 0;
+}
+.project1-flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 60px;
+    margin-bottom: 60px;
+}
+.project1-image-col {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+.project1-image {
+    width: 100%;
+    max-width: 520px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+}
+.project1-problem-col {
+    flex: 1 1 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    align-items: flex-start;
+    padding-left: 20px;
+}
+.project1-subtitle {
+    color: #F48CA0;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    text-align: left;
+}
+.project1-problem-text {
+    font-size: 1.1rem;
+    color: #444;
+    font-style: italic;
+    text-align: left;
+    line-height: 1.6;
+}
+.project1-overview-title {
+    color: #F48CA0;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 60px 0 18px 0;
+}
+.project1-overview-text {
+    font-size: 1.1rem;
+    color: #444;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto 0 auto;
+}
+@media (max-width: 900px) {
+    .project1-flex-row {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    .project1-image-col, .project1-problem-col {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 0;
+    }
+    .project1-image {
+        max-width: 100%;
+    }
+    .project1-title {
+        text-align: center;
+        margin-left: 0;
+    }
+}
+@media (max-width: 600px) {
+    .project1-title {
+        font-size: 2rem;
+    }
+    .project1-subtitle {
+        font-size: 1.2rem;
+    }
+    .project1-overview-title {
+        font-size: 1.3rem;
+    }
+    .project1-overview-text, .project1-problem-text {
+        font-size: 0.98rem;
+    }
 }
 
-.skill-box-title {
-    color: black; /* Example color */
-    font-size: 36px; /* Adjust size */
-    font-family: 'Bebas Neue';
+/* --- Insights Section (Production Design) --- */
+.insights-section {
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+.insights-title {
+    color: #F48CA0;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: 0.02em;
+}
+.insights-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    justify-items: center;
+}
+.insight-card {
+    background: #E7F3C7;
+    border-radius: 18px;
+    padding: 36px 28px 30px 28px;
+    min-width: 300px;
+    max-width: 370px;
+    font-size: 1.08rem;
+    color: #222;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 400;
-    margin-bottom: 20px; /* Space below the box title */
+    line-height: 1.6;
+}
+.insight-card b {
+    font-weight: 700;
+    font-size: 1.08em;
+}
+/* Center the last card in the last row */
+.insight-card:nth-child(5) {
+    grid-column: 1 / span 2;
+    justify-self: center;
+    max-width: 420px;
+}
+@media (max-width: 900px) {
+    .insights-cards {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+    .insight-card:nth-child(5) {
+        grid-column: auto;
+        max-width: 100%;
+    }
+}
+@media (max-width: 600px) {
+    .insights-title {
+        font-size: 1.3rem;
+        margin-bottom: 28px;
+    }
+    .insight-card {
+        font-size: 0.98rem;
+        padding: 22px 10px 18px 10px;
+        min-width: 0;
+        max-width: 98vw;
+    }
+}
+
+/* --- Ideation Section (Production Design) --- */
+.ideation-section {
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+.ideation-title {
+    color: #F48CA0;
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: 0.02em;
+}
+.ideation-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.ideation-row {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+.ideation-img {
+    width: 420px;
+    max-width: 90vw;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    background: #fff;
+}
+.ideation-img.highlighted {
+    border: 3px solid #3A8DFF;
+}
+@media (max-width: 1000px) {
+    .ideation-img {
+        width: 320px;
+    }
+}
+@media (max-width: 700px) {
+    .ideation-row {
+        flex-direction: column;
+        gap: 18px;
+    }
+    .ideation-img {
+        width: 98vw;
+        max-width: 98vw;
+    }
+}
+
+/* --- Solution Section (Production Design) --- */
+.solution-section {
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+.solution-title {
+    color: #F48CA0;
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: 0.02em;
+}
+.solution-image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.solution-img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    background: #fff;
+}
+@media (max-width: 700px) {
+    .solution-title {
+        font-size: 1.3rem;
+        margin-bottom: 28px;
+    }
+    .solution-img {
+        border-radius: 6px;
+    }
+}
+
+/* --- Project 2 Section (Production Design) --- */
+.project2-section {
+    background: #fff;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.project2-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #F48CA0;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 40px;
+    text-align: left;
+    margin-left: 0;
+}
+.project2-flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 60px;
+    margin-bottom: 60px;
+}
+.project2-image-col {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+.project2-image {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+}
+.project2-problem-col {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+.project2-subtitle {
+    color: #F48CA0;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 18px;
+    text-align: left;
+}
+.project2-problem-text {
+    font-size: 1.1rem;
+    color: #444;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-style: italic;
+    text-align: left;
+    line-height: 1.6;
+}
+.project2-overview-title {
+    color: #F48CA0;
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    margin: 60px 0 18px 0;
+}
+.project2-overview-text {
+    font-size: 1.1rem;
+    color: #444;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto 0 auto;
+}
+.project2-insights-title {
+    color: #F48CA0;
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    margin: 60px 0 40px 0;
+}
+.project2-insights-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    justify-items: center;
+}
+.project2-insight-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 32px 28px 28px 28px;
+    min-width: 320px;
+    max-width: 420px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 1.08rem;
+    color: #222;
+    text-align: left;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: 400;
+    line-height: 1.6;
+    border: 1.5px solid #eaeaea;
+}
+.project2-insight-heading {
+    color: #A3C76D;
+    font-size: 1.1rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+.project2-insight-card b {
+    font-weight: 700;
+    font-size: 1.01em;
+    color: #222;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+@media (max-width: 900px) {
+    .project2-flex-row {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    .project2-image-col, .project2-problem-col {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 0;
+    }
+    .project2-image {
+        max-width: 100%;
+    }
+    .project2-title {
+        text-align: center;
+        margin-left: 0;
+    }
+    .project2-insights-cards {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+    .project2-insight-card {
+        min-width: 0;
+        max-width: 98vw;
+    }
+}
+@media (max-width: 600px) {
+    .project2-title {
+        font-size: 2rem;
+    }
+    .project2-subtitle {
+        font-size: 1.2rem;
+    }
+    .project2-overview-title, .project2-insights-title {
+        font-size: 1.3rem;
+    }
+    .project2-overview-text, .project2-problem-text, .project2-insight-card {
+        font-size: 0.98rem;
+    }
+    .project2-insight-heading {
+        font-size: 1rem;
+    }
+}
+
+/* --- Project 2 Ideation Section --- */
+.project2-ideation-section {
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+.project2-ideation-title {
+    color: #F48CA0;
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: 0.02em;
+}
+.project2-ideation-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.project2-ideation-row {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+.project2-ideation-img {
+    width: 420px;
+    max-width: 90vw;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    background: #fff;
+}
+@media (max-width: 1000px) {
+    .project2-ideation-img {
+        width: 320px;
+    }
+}
+@media (max-width: 700px) {
+    .project2-ideation-row {
+        flex-direction: column;
+        gap: 18px;
+    }
+    .project2-ideation-img {
+        width: 98vw;
+        max-width: 98vw;
+    }
+}
+
+/* --- Project 2 Design Process Section --- */
+.project2-design-process-section {
+    margin-top: 90px;
+    margin-bottom: 40px;
+}
+.project2-design-process-title {
+    color: #444;
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: 0.02em;
+}
+.project2-design-pink {
+    color: #F48CA0;
+}
+.project2-design-process-image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project2-design-process-img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    background: #fff;
+}
+@media (max-width: 700px) {
+    .project2-design-process-title {
+        font-size: 1.3rem;
+        margin-bottom: 28px;
+    }
+    .project2-design-process-img {
+        border-radius: 6px;
+    }
+}
+
+/* --- Project 2 Solution Section --- */
+.project2-solution-section {
+    margin-top: 90px;
+    margin-bottom: 40px;
+}
+.project2-solution-title {
+    color: #F48CA0;
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: 0.02em;
+}
+.project2-solution-image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project2-solution-img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    background: #fff;
+}
+@media (max-width: 700px) {
+    .project2-solution-title {
+        font-size: 1.3rem;
+        margin-bottom: 28px;
+    }
+    .project2-solution-img {
+        border-radius: 6px;
+    }
+}
+
+/* --- Consistent Section Title Margins --- */
+.skills-title,
+.projects-title,
+.project1-title,
+.project1-overview-title,
+.insights-title,
+.solution-title,
+.project2-title,
+.project2-overview-title,
+.project2-insights-title,
+.project2-ideation-title,
+.project2-design-process-title,
+.project2-solution-title,
+.illustrations-title,
+.aboutme-title {
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+@media (max-width: 700px) {
+    .skills-title,
+    .projects-title,
+    .project1-title,
+    .project1-overview-title,
+    .insights-title,
+    .solution-title,
+    .project2-title,
+    .project2-overview-title,
+    .project2-insights-title,
+    .project2-ideation-title,
+    .project2-design-process-title,
+    .project2-solution-title,
+    .illustrations-title,
+    .aboutme-title {
+        margin-bottom: 32px;
+    }
+    .illustrations-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 }
