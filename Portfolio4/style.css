@@ -106,17 +106,36 @@ body {
     word-wrap: break-word;
 }
 
-.title-skills {
-    width: 493px;
-    height: 167px;
-    left: 165px;
-    top: 2664px;
-    position: absolute;
+
+
+.title-tools {
     color: #E06792;
-    font-size: 150px;
-    font-family: 'Bebas Neue';
-    font-weight: 400;
-    word-wrap: break-word;
+
+font-family: "Bebas Neue";
+font-size: 88px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.title-coding{
+    color: #E06792;
+
+font-family: "Bebas Neue";
+font-size: 88px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.title-languages{
+    color: #E06792;
+
+font-family: "Bebas Neue";
+font-size: 88px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 
 .text-about {
@@ -853,7 +872,7 @@ body {
     width: 689px;
     height: 289px;
     left: 309px;
-    top: 380px;
+    top: 330px;
     position: absolute;
     color: #E06792;
     font-size: 400px;
@@ -987,50 +1006,7 @@ body {
     word-wrap: break-word;
 }
 
-.skills-box-1 {
-    width: 433px;
-    height: 433px;
-    left: 184px;
-    top: 2888px;
-    position: absolute;
-    background: #D9D9D9;
-}
 
-.skills-box-2 {
-    width: 433px;
-    height: 433px;
-    left: 704px;
-    top: 2888px;
-    position: absolute;
-    background: #D9D9D9;
-}
-
-.skills-box-3 {
-    width: 433px;
-    height: 433px;
-    left: 441px;
-    top: 3396px;
-    position: absolute;
-    background: #D9D9D9;
-}
-
-.skills-box-4 {
-    width: 433px;
-    height: 433px;
-    left: 967px;
-    top: 3396px;
-    position: absolute;
-    background: #D9D9D9;
-}
-
-.skills-box-5 {
-    width: 433px;
-    height: 433px;
-    left: 1226px;
-    top: 2888px;
-    position: absolute;
-    background: #D9D9D9;
-}
 
 .qr-box-1 {
     width: 219px;
@@ -1136,4 +1112,47 @@ body {
     font-family: 'Be Vietnam Pro';
     font-weight: 300;
     word-wrap: break-word;
+}
+
+/* New Skills Section Styles */
+.skills-section {
+    margin-top: 50px; /* Adjust spacing as needed */
+    padding: 20px;
+    text-align: center; /* Center the title */
+}
+
+.skills-section-title {
+    color: #E06792; /* Keeping similar color */
+    font-size: 80px; /* Adjust size */
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    margin-bottom: 40px; /* Space below the title */
+}
+
+.skills-boxes-container {
+    display: flex;
+    justify-content: center; /* Center the boxes horizontally */
+    gap: 40px; /* Space between boxes */
+    flex-wrap: wrap; /* Allow boxes to wrap on smaller screens */
+}
+
+.skill-box {
+    width: 300px; /* Example width, adjust as needed */
+    height: 300px; /* Example height, adjust as needed */
+    border: 2px solid #797979; /* Example border */
+    background-color: #D9D9D9; /* Example background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.skill-box-title {
+    color: black; /* Example color */
+    font-size: 36px; /* Adjust size */
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    margin-bottom: 20px; /* Space below the box title */
 }
